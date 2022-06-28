@@ -1,11 +1,12 @@
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
-    "sap/ui/core/mvc/XMLView"
+    "sap/ui/core/mvc/XMLView",
+    "sap/m/MessageToast"
 ],
     /**
      * @param {typeof sap.ui.core.mvc.Controller} Controller
      */
-    function (Controller, XMLView) {
+    function (Controller, XMLView, MessageToast) {
         "use strict";
 
         // XMLView.create({
@@ -19,7 +20,8 @@ sap.ui.define([
                 //alert("Hello");
             },
             onButtonClick: function (){
-                alert("Thanks for clicking");
+                //alert("Thanks for clicking");
+                MessageToast.show("Thanks for clicking");
             }
         });
     });
