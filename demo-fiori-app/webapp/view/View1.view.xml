@@ -6,6 +6,11 @@
     <Page id="page" title="{i18n>title}">
         <Button text="{i18n>initButton}" press=".onButtonClick"/>
         <!-- <Text text="Hello world"/> -->
+        <Input 
+            value="{/recipient/name}"
+            description="Hello {/recipient/name}"
+            valueLiveUpdate="true"
+            width="60%"/>
         <content />
     </Page>
 </mvc:View>
