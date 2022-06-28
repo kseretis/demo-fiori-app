@@ -4,7 +4,6 @@ A Demo Fiori application.
 
 ## Application Details
 |               |
-| ------------- |
 |**Application Title**<br>Demo Fiori App|
 |**Module Name**<br>demo-fiori-app|
 |**App Generator**<br>@sap/generator-fiori-freestyle|

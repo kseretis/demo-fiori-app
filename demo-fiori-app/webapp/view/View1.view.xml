@@ -1,7 +1,11 @@
-<mvc:View controllerName="demofioriapp.controller.View1"
-    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+<mvc:View 
+    controllerName="demofioriapp.controller.View1"  
+    xmlns:mvc="sap.ui.core.mvc" 
+    displayBlock="true"
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
+        <Button text="Press me" press=".onButtonClick"/>
+        <!-- <Text text="Hello world"/> -->
         <content />
     </Page>
 </mvc:View>
