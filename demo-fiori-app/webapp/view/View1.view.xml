@@ -3,14 +3,11 @@
     xmlns:mvc="sap.ui.core.mvc" 
     displayBlock="true"
     xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
-        <Button text="{i18n>initButton}" press=".onButtonClick"/>
-        <!-- <Text text="Hello world"/> -->
-        <Input 
-            value="{/recipient/name}"
-            description="Hello {/recipient/name}"
-            valueLiveUpdate="true"
-            width="60%"/>
-        <content />
-    </Page>
+    <!-- <Shell> -->
+        <Page id="page" title="{i18n>pageTitle}">
+            <content>
+                <mvc:XMLView viewName="demofioriapp.view.Panel1"/>
+            </content>
+        </Page>
+    <!-- </Shells> -->
 </mvc:View>
