@@ -3,10 +3,9 @@ sap.ui.define([
 ],
   function (BaseController) {
     "use strict";
-
+    
     return BaseController.extend("demofioriapp.controller.controller.App", {
-      onInit() {
-      }
+      // onInit() { }
     });
   }
 );

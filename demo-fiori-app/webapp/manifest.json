@@ -1,11 +1,15 @@
 {
-  "_version": "1.40.0",
+  "_version": "1.36.0",
   "sap.app": {
     "id": "demofioriapp",
     "type": "application",
-    "i18n": "i18n/i18n.properties",
+    "i18n": {
+      "bundleUrl": "i18n/i18n.properties",
+      "supportedLocales": [""],
+      "fallbackLocale": ""
+    },
     "applicationVersion": {
-      "version": "0.0.1"
+      "version": "0.1.0"
     },
     "title": "{{appTitle}}",
     "description": "{{appDescription}}",
