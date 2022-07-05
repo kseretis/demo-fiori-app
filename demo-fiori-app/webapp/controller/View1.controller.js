@@ -1,25 +1,16 @@
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
-    "sap/ui/core/mvc/XMLView"
+    // "sap/ui/core/mvc/XMLView",
+    // "sap/m/MessageToast",
+    // "sap/ui/model/json/JSONModel",
+    // "sap/ui/model/resource/ResourceModel"
 ],
     /**
      * @param {typeof sap.ui.core.mvc.Controller} Controller
      */
-    function (Controller, XMLView) {
+    function (Controller) {
         "use strict";
-
-        // XMLView.create({
-        //     viewName: "demofioriapp.view.View1"
-        // }).then( function (oView) {
-        //     oView.placeAt("content");
-        // });
-
         return Controller.extend("demofioriapp.controller.View1", {
-            onInit: function () {
-                //alert("Hello");
-            },
-            onButtonClick: function (){
-                alert("Thanks for clicking");
-            }
+            onInit: function () {}
         });
     });

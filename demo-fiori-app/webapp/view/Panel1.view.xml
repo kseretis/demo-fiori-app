@@ -1,0 +1,32 @@
+<mvc:View 
+    controllerName="demofioriapp.controller.Panel1"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc" 
+    displayBlock="true"
+    xmlns="sap.m">
+    <Panel 
+        headerText="{i18n>panelTitle}"
+        class="sapUiResponsiveMargin"
+        width="auto">
+        <content>
+            <Button 
+                id="dialogButton"
+                icon="sap-icon://accounting-document-verification"
+                text="{i18n>btnOpenPopup}"
+                press=".onOpenDialog"
+                class="sapUiSmallMarginEnd"/>
+            <Button 
+                text="{i18n>initButton}" 
+                press=".onButtonClick"
+                class="myCustomButton"/>
+            <Input 
+                value="{/recipient/name}"
+                description="Hello {/recipient/name}"
+                valueLiveUpdate="true"
+                width="60%"/>
+            <Text
+                text="Hello you {/recipient/name}"
+                class="sapUiSmallMargin sapThemeHighlight-asColor myText"/>
+        </content>
+    </Panel>
+</mvc:View>

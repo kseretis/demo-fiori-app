@@ -1,13 +1,13 @@
 sap.ui.define([
-        "sap/ui/core/UIComponent",
-        "sap/ui/Device",
-        "demofioriapp/model/models"
-    ],
-    function (UIComponent, Device, models) {
+    "sap/ui/core/UIComponent",
+    "demofioriapp/model/models",
+],
+    function (UIComponent, models, Dialog1) {
         "use strict";
 
         return UIComponent.extend("demofioriapp.Component", {
             metadata: {
+                interfaces: ["sap.ui.core.IAsyncContentCreation"],
                 manifest: "json"
             },
 
@@ -23,9 +23,9 @@ sap.ui.define([
                 // enable routing
                 this.getRouter().initialize();
 
-                // set the device model
-                this.setModel(models.createDeviceModel(), "device");
-            }
+                // set the oModel
+                this.setModel(models.createDeviceModel(), "oModel");
+            },
         });
     }
 );

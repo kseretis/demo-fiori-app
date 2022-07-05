@@ -3,9 +3,12 @@
     xmlns:mvc="sap.ui.core.mvc" 
     displayBlock="true"
     xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
-        <Button text="Press me" press=".onButtonClick"/>
-        <!-- <Text text="Hello world"/> -->
-        <content />
-    </Page>
+    <!-- <Shell> -->
+        <Page id="page" title="{i18n>pageTitle}">
+            <content>
+                <mvc:XMLView viewName="demofioriapp.view.Panel1"/>
+                <mvc:XMLView viewName="demofioriapp.view.InvoiceList"/>
+            </content>
+        </Page>
+    <!-- </Shells> -->
 </mvc:View>
