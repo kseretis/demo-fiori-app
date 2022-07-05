@@ -5,5 +5,5 @@
     displayBlock="true"
     xmlns="sap.m">
     <App id="app" class="myApp">
-    </App>
+    </App> 
 </mvc:View>

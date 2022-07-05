@@ -16,4 +16,4 @@ sap.ui.define([], function() {
             }   
         }
     }
-});
+})

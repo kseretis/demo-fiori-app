@@ -9,7 +9,7 @@ sap.ui.define([
         onButtonClick: function() {
             // read msg text
             var oBundle = this.getView().getModel("i18n").getResourceBundle();
-            var sRecipient = this.getView().getModel("oModel").getProperty("/recipient/name");
+            var sRecipient = this.getView().getModel("oDataModel").getProperty("/recipient/name");
             var sMsg = oBundle.getText("msg", [sRecipient]);
             MessageToast.show(sMsg);
         },
