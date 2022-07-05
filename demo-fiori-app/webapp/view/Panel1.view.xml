@@ -11,7 +11,8 @@
         <content>
             <Button 
                 id="dialogButton"
-                text="{i18n>dialogButtonText}"
+                icon="sap-icon://accounting-document-verification"
+                text="{i18n>btnOpenPopup}"
                 press=".onOpenDialog"
                 class="sapUiSmallMarginEnd"/>
             <Button 
