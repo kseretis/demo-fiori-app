@@ -24,6 +24,7 @@ sap.ui.define([
                 dialog.open();
             });
         },
+        // commit testing
         onCloseDialog: function() {
             this.byId("myDialog").close();
         }
