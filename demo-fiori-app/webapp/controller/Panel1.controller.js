@@ -1,8 +1,10 @@
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
-    "sap/m/MessageToast",
-], function(Controller, MessageToast) {
+    "sap/m/MessageToast"
+], 
+    function(Controller, MessageToast) {
     'use strict';
+    
     return Controller.extend("demofioriapp.controller.Panel1", {
         onButtonClick: function() {
             // read msg text

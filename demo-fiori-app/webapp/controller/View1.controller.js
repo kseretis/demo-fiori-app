@@ -11,6 +11,8 @@ sap.ui.define([
     function (Controller) {
         "use strict";
         return Controller.extend("demofioriapp.controller.View1", {
-            onInit: function () {}
+            onInit: function () {
+                console.log("View1 init");
+            }
         });
     });
