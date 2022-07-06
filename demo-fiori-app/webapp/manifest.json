@@ -104,21 +104,31 @@
       },
       "routes": [
         {
-          "name": "RouteView1",
+          "name": "overview",
           "pattern": ":?query:",
-          "target": [
-            "TargetView1"
-          ]
+          "target": "Overview"
+        },
+        {
+          "name": "details",
+          "pattern": ":?query:",
+          "target": "Details"
         }
       ],
       "targets": {
-        "TargetView1": {
+        "Overview": {
           "viewType": "XML",
           "transition": "slide",
           "clearControlAggregation": false,
-          "viewId": "View1",
-          "viewName": "View1"
-        }
+          "viewId": "overview",
+          "viewName": "Overview"
+        },
+          "Details": {
+            "viewType": "XML",
+            "transition": "slide",
+            "clearControlAggregation": false,
+            "viewId": "details",
+            "viewName": "Details"
+          }
       }
     },
     "rootView": {
