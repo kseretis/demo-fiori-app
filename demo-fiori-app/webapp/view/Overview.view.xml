@@ -1,0 +1,17 @@
+<mvc:View 
+    controllerName="demofioriapp.controller.Overview"  
+    xmlns:mvc="sap.ui.core.mvc" 
+    displayBlock="true"
+    xmlns="sap.m">
+    <Page id="overview" title="{i18n>pageTitle}">
+        <headerContent>
+            <Button 
+                icon="sap-icon://hello-world"
+                press=".onOpenDialog"/>
+        </headerContent>
+        <content>
+           <mvc:XMLView viewName="demofioriapp.view.Panel1"/>
+           <mvc:XMLView viewName="demofioriapp.view.InvoiceList"/>
+        </content>
+    </Page>
+</mvc:View>
