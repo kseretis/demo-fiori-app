@@ -1,9 +1,5 @@
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
-    // "sap/ui/core/mvc/XMLView",
-    // "sap/m/MessageToast",
-    // "sap/ui/model/json/JSONModel",
-    // "sap/ui/model/resource/ResourceModel"
 ],
     /**
      * @param {typeof sap.ui.core.mvc.Controller} Controller
@@ -11,6 +7,9 @@ sap.ui.define([
     function (Controller) {
         "use strict";
         return Controller.extend("demofioriapp.controller.View1", {
-            onInit: function () {}
+            onInit: function () {
+                console.log("View1 init");
+            }
         });
-    });
+    }
+);

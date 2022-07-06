@@ -20,12 +20,12 @@
                 press=".onButtonClick"
                 class="myCustomButton"/>
             <Input 
-                value="{/recipient/name}"
-                description="Hello {/recipient/name}"
+                value="{oDataModel>/recipient/name}" 
+                description="Hello {oDataModel>/recipient/name}"
                 valueLiveUpdate="true"
                 width="60%"/>
             <Text
-                text="Hello you {/recipient/name}"
+                text="Hello you {oDataModel>/recipient/name}"
                 class="sapUiSmallMargin sapThemeHighlight-asColor myText"/>
         </content>
     </Panel>

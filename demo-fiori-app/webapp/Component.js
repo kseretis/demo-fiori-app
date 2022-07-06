@@ -2,7 +2,7 @@ sap.ui.define([
     "sap/ui/core/UIComponent",
     "demofioriapp/model/models",
 ],
-    function (UIComponent, models, Dialog1) {
+    function (UIComponent, models) {
         "use strict";
 
         return UIComponent.extend("demofioriapp.Component", {
@@ -20,11 +20,11 @@ sap.ui.define([
                 // call the base component's init function
                 UIComponent.prototype.init.apply(this, arguments);
 
+                // set the oModel
+                this.setModel(models.createODataModel(), "oDataModel");
+
                 // enable routing
                 this.getRouter().initialize();
-
-                // set the oModel
-                this.setModel(models.createDeviceModel(), "oModel");
             },
         });
     }

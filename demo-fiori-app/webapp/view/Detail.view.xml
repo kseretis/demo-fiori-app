@@ -1,0 +1,16 @@
+<mvc:View 
+    controllerName="demofioriapp.controller.Detail"
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns="sap.m">
+    <Page 
+        title="{i18n>detailTitle}" 
+        showNavButton="true"
+        navButtonPress=".onNavBack">
+        <ObjectHeader
+            intro="{invoice>ShipperName}"
+            title="{invoice>ProductName}"/>
+        <content>
+           
+        </content>
+    </Page>
+</mvc:View>
