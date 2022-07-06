@@ -106,23 +106,23 @@
         {
           "name": "overview",
           "pattern": ":?query:",
-          "target": "Overview"
+          "target": "overview"
         },
         {
           "name": "details",
           "pattern": ":?query:",
-          "target": "Details"
+          "target": "details"
         }
       ],
       "targets": {
-        "Overview": {
+        "overview": {
           "viewType": "XML",
           "transition": "slide",
           "clearControlAggregation": false,
           "viewId": "overview",
           "viewName": "Overview"
         },
-          "Details": {
+          "details": {
             "viewType": "XML",
             "transition": "slide",
             "clearControlAggregation": false,
