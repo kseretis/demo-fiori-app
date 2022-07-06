@@ -2,7 +2,7 @@
 	controllerName="demofioriapp.controller.InvoiceList"
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc">
-	<List
+	<Table
 		id="invoiceList"
 		headerText="{i18n>invoiceListTitle}"
 		class="sapUiResponsiveMargin"
@@ -21,8 +21,57 @@
 				<SearchField width="50%" search=".onFilterInvoices"/>
 			</Toolbar>
 		</headerToolbar>
+		<columns>
+			<Column
+				hAlign="Begin"
+				minScreenWidth="Small"
+				demandPopin="true"
+				width="7em">
+				<Text text="{i18n>columnQuantity}"/>
+			</Column>
+			<Column>
+				<Text text="{i18n>columnName}"/>
+			</Column>
+			<Column
+				minScreenWidth="Small"
+				demandPopin="true">
+				<Text text="{i18n>columnStatus}"/>
+			</Column>
+			<Column
+				minScreenWidth="Tablet"
+				demandPopin="false">
+				<Text text="{i18n>columnSupplier}"/>
+			</Column>
+			<Column
+				hAlign="End">
+				<Text text="{i18n>columnPrice}"/>
+			</Column>
+		</columns>
 		<items>
-			<ObjectListItem
+			<ColumnListItem
+				type="Navigation"
+				press=".onItemClick">
+				<cells>
+					<ObjectNumber number="{invoice>Quantity}" emphasized="false"/>
+					<ObjectIdentifier title="{invoice>ProductName}"/>
+					<Text text="{
+						path: 'invoice>Status',
+						formatter: '.formatter.statusText'
+					}"/>
+					<Text text="{invoice>ShipperName}"/>
+					<ObjectNumber
+						number="{
+							parts: [{path: 'invoice>ExtendedPrice'}, {path: 'list>/currency'}],
+							type: 'sap.ui.model.type.Currency',
+							formatOptions: {
+								showMeasure: false
+							}
+						}"
+						unit="{list>/currency}"
+						state="{= ${invoice>ExtendedPrice} > 50 ? 'Error' : 'Success' }"/>
+				</cells>
+			</ColumnListItem>
+			<!-- <ObjectListItem
 				title="{invoice>Quantity} x {invoice>ProductName}"
 				number="{
 					parts: [{path: 'invoice>ExtendedPrice'}, {path: 'list>/currency'}],
@@ -41,7 +90,7 @@
 						formatter: '.formatter.statusText'
 					}"/>
 				</firstStatus>
-			</ObjectListItem>
+			</ObjectListItem> -->
 		</items>
-	</List>
+	</Table>
 </mvc:View>
