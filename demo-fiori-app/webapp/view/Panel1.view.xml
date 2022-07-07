@@ -16,7 +16,8 @@
                 icon="sap-icon://accounting-document-verification"
                 text="{i18n>btnOpenPopup}"
                 press=".onOpenDialog"
-                class="sapUiSmallMarginEnd sapUiVisibleOnlyOnDesktop"/>
+                class="sapUiSmallMarginEnd sapUiVisibleOnlyOnDesktop"
+                />
             <Button 
                 text="{i18n>initButton}" 
                 press=".onButtonClick"

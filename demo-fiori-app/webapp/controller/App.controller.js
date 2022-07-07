@@ -5,7 +5,9 @@ sap.ui.define([
     "use strict";
 
     return BaseController.extend("demofioriapp.controller.controller.App", {
-      // onInit() { }
+      onInit: function() {
+        this.getView().addStyleClass(this.getOwnerComponent().getContentDestityClass());
+      }
     });
   }
 );

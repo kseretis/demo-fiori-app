@@ -1,8 +1,9 @@
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
-    "sap/m/MessageToast"
+    "sap/m/MessageToast",
+    "sap/ui/core/syncStyleClass"
 ],
-    function (Controller, MessageToast) {
+    function (Controller, MessageToast,syncStyleClass) {
         'use strict';
 
         return Controller.extend("demofioriapp.controller.Panel1", {
@@ -21,6 +22,7 @@ sap.ui.define([
                     });
                 }
                 this.pDialog.then(function (dialog) {
+                    //syncStyleClass(this.getView().getController().getOwnerComponent().getContentDestityClass(), this.getView(), dialog);
                     dialog.open();
                 });
             },

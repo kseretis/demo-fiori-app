@@ -1,8 +1,9 @@
 sap.ui.define([
     "sap/ui/core/UIComponent",
-    "demofioriapp/model/models"
+    "demofioriapp/model/models",
+    "sap/ui/Device"
 ],
-    function (UIComponent, models) {
+    function (UIComponent, models, Device) {
         "use strict";
 
         return UIComponent.extend("demofioriapp.Component", {
@@ -29,6 +30,11 @@ sap.ui.define([
                 // enable routing
                 this.getRouter().initialize();
             },
+            getContentDestityClass: function() {
+                if(!this._sContentDestityClass)
+                    this._sContentDestityClass = !Device.support.touch ? "sapUiSizeCompact" : "sapUiSizeCozy";
+                return this._sContentDestityClass;
+            }
         });
     }
 );
