@@ -7,14 +7,16 @@
     <Panel 
         headerText="{i18n>panelTitle}"
         class="sapUiResponsiveMargin"
-        width="auto">
+        width="auto"
+        expandable="{device>/system/phone}"
+        expanded="{= !${device>/system/phone}}">
         <content>
             <Button 
                 id="dialogButton"
                 icon="sap-icon://accounting-document-verification"
                 text="{i18n>btnOpenPopup}"
                 press=".onOpenDialog"
-                class="sapUiSmallMarginEnd"/>
+                class="sapUiSmallMarginEnd sapUiVisibleOnlyOnDesktop"/>
             <Button 
                 text="{i18n>initButton}" 
                 press=".onButtonClick"

@@ -1,6 +1,6 @@
 sap.ui.define([
     "sap/ui/core/UIComponent",
-    "demofioriapp/model/models",
+    "demofioriapp/model/models"
 ],
     function (UIComponent, models) {
         "use strict";
@@ -22,6 +22,9 @@ sap.ui.define([
 
                 // set the oModel
                 this.setModel(models.createODataModel(), "oDataModel");
+
+                // set device model
+                this.setModel(models.createDeviceModel(), "device");
 
                 // enable routing
                 this.getRouter().initialize();
