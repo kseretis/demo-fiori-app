@@ -77,26 +77,6 @@
 							state="{= ${invoice>ExtendedPrice} > 50 ? 'Error' : 'Success' }"/>
 					</cells>
 				</ColumnListItem>
-				<!-- <ObjectListItem
-					title="{invoice>Quantity} x {invoice>ProductName}"
-					number="{
-						parts: [{path: 'invoice>ExtendedPrice'}, {path: 'list>/currency'}],
-						type: 'sap.ui.model.type.Currency',
-						formatOptions: {
-							showMeasure: false
-						}
-					}"
-					numberUnit="{list>/currency}"
-					numberState="{= ${invoice>ExtendedPrice} > 50 ? 'Error' : 'Success'}"
-					type="Navigation"
-					press=".onItemClick">
-					<firstStatus>
-						<ObjectStatus text="{
-							path: 'invoice>Status',
-							formatter: '.formatter.statusText'
-						}"/>
-					</firstStatus>
-				</ObjectListItem> -->
 			</items>
 		</Table>
 	</Panel>

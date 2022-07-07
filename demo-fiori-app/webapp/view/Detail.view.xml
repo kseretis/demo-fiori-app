@@ -25,9 +25,9 @@
 					path: 'invoice>ShippedDate',
 					type: 'sap.ui.model.type.Date',
 					formatOptions: {
-					  style: 'long',
-					  source: {
-						pattern: 'yyyy-MM-ddTHH:mm:ss'
+						style: 'long',
+					  	source: {
+							pattern: 'yyyy-MM-ddTHH:mm:ss'
 					  }
 					}
 				  }"/>
