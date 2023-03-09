@@ -1,6 +1,6 @@
 ## demo-fiori-app
 
-A Demo Fiori application.
+A Demo Fiori application(BTP).
 
 ## Application Details
 |               |
